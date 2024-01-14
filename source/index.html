@@ -1,26 +1,85 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт волонтёрских стажировок">
+    <title>Internship programs</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon/favicon.png">
+    <link rel="preload" href="fonts/manrope-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/manrope-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/manrope-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="sass/style.scss">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Internship programs</title>
-  <link rel="stylesheet" href="sass/style.scss">
-</head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">header</div>
+      </header>
 
-<body>
-  <div data-test="slider">slider</div>
-  <div data-test="about">about</div>
-  <div data-test="programs">programs</div>
-  <div data-test="grant">grant</div>
-  <div data-test="news">news</div>
-  <div data-test="FAQ">FAQ</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="contacts">contacts</div>
-  <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
-  <script type="module" src="js/main.js"></script>
-</body>
+      <main>
+        <h1 class="visually-hidden">Internship programs</h1>
+        <section data-test="slider">
+          <div class="container">hero</div>
+        </section>
 
+        <section data-test="about">
+          <div class="container">
+            <h2>О проекте «Стажировка»</h2>
+          </div>
+        </section>
+
+        <section data-test="programs">
+          <div class="container">
+            <h2>Программы</h2>
+          </div>
+        </section>
+
+        <section data-test="grant">
+          <div class="container">
+            <h2>Как поехать</h2>
+          </div>
+        </section>
+
+        <section data-test="news">
+          <div class="container">
+            <h2>Новости и материалы</h2>
+          </div>
+        </section>
+
+        <section data-test="FAQ">
+          <div class="container">
+            <h2>Вопросы и ответы</h2>
+          </div>
+        </section>
+
+        <section data-test="reviews">
+          <div class="container">
+            <h2>Отзывы</h2>
+          </div>
+        </section>
+
+        <section data-test="contacts">
+          <div class="container">
+            <h2>Контакты</h2>
+          </div>
+        </section>
+
+        <section data-test="form">
+          <div class="container">
+            <h2>Напишите нам</h2>
+          </div>
+        </section>
+      </main>
+
+      <footer data-test="footer">
+        <div class="container">footer</div>
+      </footer>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
