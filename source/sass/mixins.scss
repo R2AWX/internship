@@ -1,32 +1,34 @@
-@mixin hover {
-  @media (hover: hover) {
-    &:hover:not(.focus-visible) {
-      @content;
-    }
-  }
-}
-
-@mixin focus {
-  &.focus-visible:focus {
+@mixin hover-focus {
+  &:hover,
+  &:focus {
     @content;
   }
 }
 
 @mixin active {
-  &:active:not(.focus-visible) {
+  &:active,
+  &.is-active {
     @content;
   }
 }
 
-@mixin hover-focus {
-  @media (hover: hover) {
-    &:hover:not(.focus-visible) {
-      @content;
-    }
-  }
-
-  &.focus-visible:focus {
+@mixin disabled {
+  &:disabled,
+  &.is-disabled {
     @content;
+  }
+}
+
+@mixin angle {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    mask-image: url("../img/svg/angle.svg");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    background-color: $color-default-white;
   }
 }
 
