@@ -1,0 +1,140 @@
+.grant {
+  color: $color-default-white;
+  background-color: $color-cerulean-blue;
+}
+
+.grant__container {
+  display: grid;
+  grid-template-columns: repeat(2, 498px);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  gap: 40px 138px;
+
+  @include vp-1439 {
+    grid-template-columns: 1fr;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 67px;
+    padding-bottom: 67px;
+    row-gap: 30px;
+  }
+}
+
+.grant__title {
+  margin: 12px 0 42px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+
+  @include vp-1439 {
+    margin-bottom: 44px;
+    font-size: 34px;
+  }
+
+  @include vp-767 {
+    margin: 5px 0 21px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.grant__container p {
+  margin: 0;
+  color: $color-alabaster;
+
+  @include vp-1439 {
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+.grant__wrapper p {
+  margin-bottom: 40px;
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
+}
+
+.grant__container img {
+  border-radius: 16px;
+}
+
+.grant__list-wrapper h3 {
+  margin: 15px 0 46px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+
+  @include vp-1439 {
+    margin: 10px 0 30px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.grant__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 8px;
+
+  @include vp-1439 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 28px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grant__item {
+  position: relative;
+  margin: 15px 0 0 20px;
+  padding: 30px 25px;
+  border: 1px solid $color-alabaster;
+  border-radius: 16px;
+
+  @include vp-767 {
+    margin: 5px 0 0 15px;
+    padding: 24px 25px;
+  }
+}
+
+.grant__item span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -15px;
+  left: -20px;
+  width: 42px;
+  height: 42px;
+  background-color: $color-cerulean-blue;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+
+  @include vp-767 {
+    top: -5px;
+    left: -15px;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
