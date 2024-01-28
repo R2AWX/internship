@@ -253,8 +253,33 @@
           </section>
 
           <section class="contacts" data-test="contacts">
-            <div class="container">
-              <h2>Контакты</h2>
+            <div class="container contacts__container">
+              <div class="contacts__content-wrapper">
+                <h2 class="contacts__title">Контакты</h2>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <p class="contacts__heading">Центральный офис</p>
+                    <p class="contacts__description">г. Новосибирск, ул. Щетинкина&nbsp;68,<br>культурный центр</p>
+                  </li>
+                  <li class="contacts__item">
+                    <p class="contacts__heading">Телефон</p>
+                    <p class="contacts__description">+7&nbsp;963&nbsp;876&nbsp;876&nbsp;76</p>
+                  </li>
+                  <li class="contacts__item">
+                    <p class="contacts__heading">Email</p>
+                    <p class="contacts__description">Info@stazh.ru</p>
+                  </li>
+                </ul>
+              </div>
+
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" width="290" height="240" srcset="./img/contacts/map-mobile@1x.webp 1x, ./img/contacts/map-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1439px)" width="678" height="500" srcset="./img/contacts/map-tablet@1x.webp 1x, ./img/contacts/map-tablet@2x.webp 2x">
+                <source type="image/webp" width="1240" height="500" srcset="img/contacts/map-desktop@1x.webp 1x, img/contacts/map-desktop@2x.webp 2x">
+                <source type="image/jpeg" media="(max-width: 767px)" width="290" height="240" srcset="./img/contacts/map-mobile@1x.jpg 1x, ./img/contacts/map-mobile@2x.jpg 2x">
+                <source type="image/jpeg" media="(max-width: 1439px)" width="678" height="500" srcset="./img/contacts/map-tablet@1x.jpg 1x, ./img/contacts/map-tablet@2x.jpg 2x">
+                <img src="img/contacts/map-desktop@1x.jpg" width="1240" height="500" srcset="img/contacts/map-desktop@2x.jpg 2x" alt="Карта города.">
+              </picture>
             </div>
           </section>
 
