@@ -110,7 +110,7 @@
 }
 
 .faq__item:hover .faq__accordion-btn,
-.faq__item:focus .faq__accordion-btn {
+.faq__item:focus-visible .faq__accordion-btn {
   background-color: $color-default-white;
   outline: none;
 
@@ -144,7 +144,7 @@
 }
 
 .faq__item.is-active:hover .faq__accordion-btn,
-.faq__item.is-active:focus .faq__accordion-btn {
+.faq__item.is-active:focus-visible .faq__accordion-btn {
   background-color: $color-cerulean-blue;
   outline: none;
 

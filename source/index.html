@@ -17,11 +17,106 @@
   <body>
     <div class="wrapper">
       <header>
-        <div class="container"></div>
+        <h1 class="visually-hidden">Internship programs</h1>
+        <nav class="header" data-header="sticky">
+          <div class="container header__container" data-menu="wrapper">
+            <a class="header__logo" href="#" aria-label="Логотип сайта волонтёрских стажировок">
+              <svg width="30" height="30" role="img">
+                <use href="/__spritemap#sprite-logo"></use>
+              </svg>
+            </a>
+
+            <button class="btn btn--menu btn--light header__btn" type="button" data-menu="button">
+              <span>Меню</span>
+              <div class="btn__icon--open">
+                <svg width="20" height="20" role="img" aria-hidden="true" focusable="false">
+                  <use href="/__spritemap#sprite-open"></use>
+                </svg>
+              </div>
+              <div class="btn__icon--close">
+                <svg width="20" height="20" role="img" aria-hidden="true" focusable="false">
+                  <use href="/__spritemap#sprite-close"></use>
+                </svg>
+              </div>
+            </button>
+
+            <div class="header__wrapper" data-menu="nav">
+              <ul class="header__list" data-accordion="parent">
+                <li class="header__item">
+                  <a class="header__link" href="#" data-menu="link">О проекте</a>
+                </li>
+
+                <li class="header__item" data-accordion="element">
+                  <a class="header__link" href="#" data-accordion="button">
+                    <span>Программы</span>
+                    <svg width="12" height="12" role="img" aria-hidden="true" focusable="false">
+                      <use href="/__spritemap#sprite-checkmark"></use>
+                    </svg>
+                  </a>
+
+                  <ul class="header__list header__list--secondary" data-accordion="content">
+                    <li class="header__item">
+                      <a class="header__link" href="#" data-menu="link">Стажировки</a>
+                    </li>
+                    <li class="header__item">
+                      <a class="header__link" href="#" data-menu="link">Волонтёрство</a>
+                    </li>
+                    <li class="header__item">
+                      <a class="header__link" href="#" data-menu="link">Учёба</a>
+                    </li>
+                    <li class="header__item">
+                      <a class="header__link" href="#" data-menu="link">Религия</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header__item">
+                  <a class="header__link" href="#" data-menu="link">Как поехать</a>
+                </li>
+
+                <li class="header__item">
+                  <a class="header__link" href="#" data-menu="link">Отзывы</a>
+                </li>
+
+                <li class="header__item" data-accordion="element">
+                  <a class="header__link" href="#" data-accordion="button">
+                    <span>Новости</span>
+                    <svg width="12" height="12" role="img" aria-hidden="true" focusable="false">
+                      <use href="/__spritemap#sprite-checkmark"></use>
+                    </svg>
+                  </a>
+
+                  <ul class="header__list header__list--secondary" data-accordion="content">
+                    <li class="header__item">
+                      <a class="header__link" href="#" data-menu="link">Общее</a>
+                    </li>
+                    <li class="header__item">
+                      <a class="header__link" href="#" data-menu="link">Волонтерство</a>
+                    </li>
+                    <li class="header__item">
+                      <a class="header__link" href="#" data-menu="link">Стажировки</a>
+                    </li>
+                    <li class="header__item">
+                      <a class="header__link" href="#" data-menu="link">Карьера</a>
+                    </li>
+                    <li class="header__item">
+                      <a class="header__link" href="#" data-menu="link">Путешествия</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header__item">
+                  <a class="header__link" href="#" data-menu="link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="header__overlay" data-menu="overlay"></div>
+        </nav>
       </header>
 
       <main>
-        <h1 class="visually-hidden">Internship programs</h1>
         <div class="indention">
           <section class="slider" data-test="slider">
             <div class="slider__swiper swiper" data-swiper="slider">
@@ -358,7 +453,9 @@
       </main>
 
       <footer data-test="footer">
-        <div class="container">footer</div>
+        <nav class="footer">
+          <div class="container footer__container">footer</div>
+        </nav>
       </footer>
     </div>
 

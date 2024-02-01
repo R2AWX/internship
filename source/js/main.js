@@ -1,7 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {Form} from './vendor/form-validate/form';
+import {StickyHeader} from './vendor/sticky-header';
+import {initMenu} from './modules/menu';
 import {initSliders} from './modules/slider';
-import {initAccordions} from './modules/accordions/init-accordion';
+import {initAccordions} from './modules/init-accordion';
+import {Form} from './vendor/form-validate/form';
 
 // ---------------------------------
 
@@ -16,10 +18,13 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   window.addEventListener('load', () => {
+    const stickyHeader = new StickyHeader();
+    stickyHeader.init();
+    initMenu();
+    initSliders();
     const form = new Form();
     window.form = form;
     form.init();
-    initSliders();
     initAccordions();
   });
 });
