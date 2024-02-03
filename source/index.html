@@ -43,11 +43,11 @@
             <div class="header__wrapper" data-menu="nav">
               <ul class="header__list" data-accordion="parent">
                 <li class="header__item">
-                  <a class="header__link" href="#" data-menu="link">О проекте</a>
+                  <a class="header__link" href="#about" data-menu="link">О проекте</a>
                 </li>
 
                 <li class="header__item" data-accordion="element">
-                  <a class="header__link" href="#" data-accordion="button">
+                  <a class="header__link" data-accordion="button">
                     <span>Программы</span>
                     <svg width="12" height="12" role="img" aria-hidden="true" focusable="false">
                       <use href="/__spritemap#sprite-checkmark"></use>
@@ -56,30 +56,30 @@
 
                   <ul class="header__list header__list--secondary" data-accordion="content">
                     <li class="header__item">
-                      <a class="header__link" href="#" data-menu="link">Стажировки</a>
+                      <a class="header__link" href="#programs" data-menu="link">Стажировки</a>
                     </li>
                     <li class="header__item">
-                      <a class="header__link" href="#" data-menu="link">Волонтёрство</a>
+                      <a class="header__link" href="#programs" data-menu="link">Волонтёрство</a>
                     </li>
                     <li class="header__item">
-                      <a class="header__link" href="#" data-menu="link">Учёба</a>
+                      <a class="header__link" href="#programs" data-menu="link">Учёба</a>
                     </li>
                     <li class="header__item">
-                      <a class="header__link" href="#" data-menu="link">Религия</a>
+                      <a class="header__link" href="#programs" data-menu="link">Религия</a>
                     </li>
                   </ul>
                 </li>
 
                 <li class="header__item">
-                  <a class="header__link" href="#" data-menu="link">Как поехать</a>
+                  <a class="header__link" href="#grant" data-menu="link">Как поехать</a>
                 </li>
 
                 <li class="header__item">
-                  <a class="header__link" href="#" data-menu="link">Отзывы</a>
+                  <a class="header__link" href="#reviews" data-menu="link">Отзывы</a>
                 </li>
 
                 <li class="header__item" data-accordion="element">
-                  <a class="header__link" href="#" data-accordion="button">
+                  <a class="header__link" data-accordion="button">
                     <span>Новости</span>
                     <svg width="12" height="12" role="img" aria-hidden="true" focusable="false">
                       <use href="/__spritemap#sprite-checkmark"></use>
@@ -88,25 +88,25 @@
 
                   <ul class="header__list header__list--secondary" data-accordion="content">
                     <li class="header__item">
-                      <a class="header__link" href="#" data-menu="link">Общее</a>
+                      <a class="header__link" href="#news" data-menu="link">Общее</a>
                     </li>
                     <li class="header__item">
-                      <a class="header__link" href="#" data-menu="link">Волонтерство</a>
+                      <a class="header__link" href="#news" data-menu="link">Волонтерство</a>
                     </li>
                     <li class="header__item">
-                      <a class="header__link" href="#" data-menu="link">Стажировки</a>
+                      <a class="header__link" href="#news" data-menu="link">Стажировки</a>
                     </li>
                     <li class="header__item">
-                      <a class="header__link" href="#" data-menu="link">Карьера</a>
+                      <a class="header__link" href="#news" data-menu="link">Карьера</a>
                     </li>
                     <li class="header__item">
-                      <a class="header__link" href="#" data-menu="link">Путешествия</a>
+                      <a class="header__link" href="#news" data-menu="link">Путешествия</a>
                     </li>
                   </ul>
                 </li>
 
                 <li class="header__item">
-                  <a class="header__link" href="#" data-menu="link">Контакты</a>
+                  <a class="header__link" href="#contacts" data-menu="link">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -218,7 +218,7 @@
             </div>
           </section>
 
-          <section class="about" data-test="about">
+          <section class="about" id="about" data-test="about">
             <div class="container about__container">
               <div class="about__wrapper">
                 <div class="about__heading-wrapper">
@@ -284,13 +284,13 @@
             </div>
           </section>
 
-          <section class="programs" data-test="programs">
+          <section class="programs" id="programs" data-test="programs">
             <div class="container">
               <h2>Программы</h2>
             </div>
           </section>
 
-          <section class="grant" data-test="grant">
+          <section class="grant" id="grant" data-test="grant">
             <div class="container grant__container">
               <div class="grant__wrapper">
                 <h2 class="grant__title">Как поехать</h2>
@@ -329,7 +329,7 @@
             </div>
           </section>
 
-          <section class="news" data-test="news">
+          <section class="news" id="news" data-test="news">
             <div class="container">
               <h2>Новости и материалы</h2>
             </div>
@@ -407,13 +407,13 @@
             </div>
           </section>
 
-          <section class="reviews" data-test="reviews">
+          <section class="reviews" id="reviews" data-test="reviews">
             <div class="container">
               <h2>Отзывы</h2>
             </div>
           </section>
 
-          <section class="contacts" data-test="contacts">
+          <section class="contacts" id="contacts" data-test="contacts">
             <div class="container contacts__container">
               <div class="contacts__content-wrapper">
                 <h2 class="contacts__title">Контакты</h2>
@@ -532,9 +532,69 @@
       </main>
 
       <footer data-test="footer">
-        <nav class="footer">
-          <div class="container footer__container">footer</div>
-        </nav>
+        <div class="container footer">
+          <nav class="footer__nav">
+            <a class="footer__logo" href="#" aria-label="Логотип сайта волонтёрских стажировок">
+              <svg width="30" height="30" role="img">
+                <use href="/__spritemap#sprite-logo"></use>
+              </svg>
+            </a>
+
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#about">О проекте</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#programs">Программы</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#grant">Как поехать</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#reviews">Отзывы</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#news">Новости</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__text-wrapper">
+            <p>Стажировка &#169; 2023 Все права защищены</p>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+
+          <div class="footer__social-wrapper">
+            <a class="footer__social-link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="16" height="16" role="img">
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg>
+            </a>
+
+            <a class="footer__social-link" href="https://ok.ru/htmlacademy" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Одноклассники</span>
+              <svg width="16" height="16" role="img">
+                <use href="/__spritemap#sprite-odnoklassniki"></use>
+              </svg>
+            </a>
+
+            <a class="footer__social-link" href="https://www.reddit.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Реддит</span>
+              <svg width="16" height="16" role="img">
+                <use href="/__spritemap#sprite-reddit"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
 
