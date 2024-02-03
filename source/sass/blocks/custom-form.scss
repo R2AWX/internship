@@ -1,0 +1,805 @@
+.custom-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  border-radius: 16px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    margin: 0 0 7px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+
+    @include vp-1439 {
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 13px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    @include vp-1439 {
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+  }
+}
+
+.custom-form--primary {
+  max-width: 498px;
+  padding: 80px 74px 36px;
+  background-color: $color-cerulean-blue;
+
+  @include vp-1439 {
+    padding: 60px 46px 51px;
+    max-width: 442px;
+  }
+
+  @include vp-767 {
+    padding: 50px 16px 47px;
+  }
+
+  form {
+    gap: 17px;
+
+    @include vp-767 {
+      gap: 20px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 25px;
+    color: $color-default-white;
+
+    @include vp-1439 {
+      margin-bottom: 28px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 19px;
+      line-height: 18px;
+    }
+  }
+
+  p {
+    margin-bottom: 29px;
+    color: $color-alabaster-90;
+
+    @include vp-1439 {
+      margin-bottom: 32px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.custom-form--modal {
+  max-width: 510px;
+  padding: 53px 81px 60px;
+  background-color: $color-default-white;
+
+  form {
+    gap: 16px;
+
+    @include vp-767 {
+      gap: 13px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    color: $color-cerulean-blue;
+
+    @include vp-767 {
+      margin-bottom: 6px;
+      line-height: 22px;
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 18px;
+    color: $color-charcoal;
+
+    @include vp-1439 {
+      margin-bottom: 21px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 17px;
+    }
+  }
+
+  @include vp-1439 {
+    padding-top: 55px;
+  }
+
+  @include vp-767 {
+    padding: 35px 15px 40px;
+  }
+}
+
+.custom-form__input {
+  position: relative;
+  width: 100%;
+
+  label,
+  .custom-form__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: 400;
+
+    @include vp-1439 {
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      line-height: 14px;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 8px;
+    border: none;
+    transition: outline $trans-default;
+    background-color: $color-transparent;
+  }
+
+  input {
+    padding: 12px 25px;
+    min-height: 48px;
+  }
+
+  textarea {
+    padding: 16px 25px;
+    min-height: 96px;
+    resize: none;
+    appearance: none;
+
+    @include vp-767 {
+      min-height: 92px;
+    }
+  }
+}
+
+.custom-form__input.is-invalid {
+  input,
+  textarea {
+    outline: 1px solid $color-wild-watermelon;
+    background-color: $color-wild-watermelon-20;
+  }
+}
+
+.custom-form__input--primary {
+  label,
+  .custom-form__wrapper {
+    gap: 9px;
+
+    @include vp-767 {
+      gap: 10px;
+    }
+
+    &:focus-within span {
+      color: $color-alabaster;
+    }
+
+    &:hover span {
+      color: $color-alabaster;
+    }
+
+    &:hover input,
+    &:hover textarea {
+      outline: 1px solid $color-default-white;
+    }
+  }
+
+  span {
+    margin-left: -1px;
+    line-height: 18px;
+    color: $color-alabaster-80;
+
+    @include vp-767 {
+      font-size: 12px;
+    }
+  }
+
+  input,
+  textarea {
+    outline: 1px solid $color-white-30;
+    color: $color-default-white;
+
+    &:active,
+    &:focus {
+      outline: 1px solid $color-default-white;
+    }
+  }
+}
+
+.custom-form__input--modal {
+  label,
+  .custom-form__wrapper {
+    gap: 8px;
+
+    &:focus-within span {
+      color: $color-charcoal;
+    }
+
+    &:hover span {
+      color: $color-charcoal;
+    }
+
+    &:hover input,
+    &:hover textarea {
+      outline: 1px solid $color-charcoal;
+    }
+
+    @include vp-767 {
+      gap: 6px;
+    }
+  }
+
+  span {
+    line-height: 20px;
+    color: $color-charcoal-80;
+  }
+
+  input,
+  textarea {
+    color: $color-charcoal;
+    outline: 1px solid $color-charcoal-30;
+
+    &:active,
+    &:focus {
+      outline: 1px solid $color-charcoal;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+    }
+  }
+
+  input {
+    @include vp-767 {
+      min-height: 42px;
+    }
+  }
+}
+
+.custom-form__input--primary.is-disabled {
+  pointer-events: none;
+  cursor: default;
+
+  span {
+    color: $color-alabaster-60;
+  }
+
+  input,
+  textarea {
+    opacity: 0.4;
+    outline: 1px solid $color-default-white;
+    background-color: $color-white-20;
+  }
+}
+
+.custom-form__input--modal.is-disabled {
+  pointer-events: none;
+  cursor: default;
+
+  span {
+    color: $color-mischka-60;
+  }
+
+  input,
+  textarea {
+    outline: 1px solid $color-mischka-50;
+    background-color: $color-mischka-20;
+  }
+}
+
+.custom-form__select {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  &:hover,
+  &:focus-within {
+    .custom-form__label {
+      opacity: 1;
+    }
+  }
+
+  @include vp-1439 {
+    gap: 8px;
+  }
+}
+
+.custom-form__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  opacity: 0.8;
+}
+
+.custom-form__select--primary {
+  margin-top: 4px;
+  gap: 13px;
+
+  @include vp-1439 {
+    margin-top: -1px;
+    gap: 8px;
+  }
+
+  @include vp-767 {
+    margin-top: 2px;
+    gap: 12px;
+  }
+
+  &:hover {
+    .custom-form__btn {
+      outline: 1px solid $color-default-white;
+    }
+  }
+
+  .custom-form__label {
+    margin-left: -1px;
+    color: $color-alabaster;
+
+    @include vp-1439 {
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}
+
+.custom-form__select--modal {
+  gap: 10px;
+
+  &:hover {
+    .custom-form__btn {
+      outline: 1px solid $color-charcoal;
+    }
+  }
+
+  @include vp-1439 {
+    gap: 8px;
+  }
+
+  @include vp-767 {
+    padding-top: 3px;
+    gap: 9px;
+  }
+
+  .custom-form__label {
+    color: $color-charcoal;
+    line-height: 18px;
+
+    @include vp-1439 {
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      line-height: 14px;
+    }
+  }
+}
+
+select {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.custom-form__btn {
+  position: relative;
+  min-height: 48px;
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: none;
+  transition: outline $trans-default;
+  appearance: none;
+  background-color: $color-transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-form__btn--primary {
+  color: $color-alabaster;
+  outline: 1px solid $color-white-30;
+
+  &:focus,
+  &:active {
+    outline: 1px solid $color-default-white;
+  }
+
+  svg {
+    color: $color-default-white;
+  }
+}
+
+.custom-form__btn--modal {
+  color: $color-charcoal;
+  outline: 1px solid $color-charcoal-30;
+
+  &:focus,
+  &:active {
+    outline: 1px solid $color-charcoal;
+  }
+
+  @include vp-767 {
+    min-height: 42px;
+    padding: 13px 20px;
+  }
+
+  svg {
+    color: $color-charcoal;
+  }
+}
+
+.custom-form__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  flex-shrink: 0;
+  overflow: hidden;
+  width: calc(100% - 16px);
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  opacity: 0;
+  transition: opacity $trans-default;
+
+  br {
+    display: none;
+  }
+}
+
+.custom-form__icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+}
+
+.custom-form__list {
+  position: absolute;
+  bottom: -4px;
+  z-index: 1;
+  cursor: pointer;
+  width: 100%;
+  max-height: 194px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-y: auto;
+  border-radius: 8px;
+  transform: translateY(100%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility $trans-default, $trans-default;
+  color: $color-charcoal;
+  background-color: $color-default-white;
+}
+
+.custom-form__list--primary {
+  outline: 1px solid $color-default-white;
+}
+
+.custom-form__list--modal {
+  outline: 1px solid $color-charcoal;
+}
+
+.custom-form__item {
+  padding: 17px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  transition: all $trans-default;
+  cursor: pointer;
+  outline: none;
+
+  &:active,
+  &:focus {
+    color: $color-default-white;
+    background-color: $color-cerulean-blue;
+  }
+}
+
+.custom-form__select.is-disabled {
+  pointer-events: none;
+
+  .custom-form__list {
+    display: none;
+  }
+}
+
+.custom-form__select.open-up {
+  .custom-form__list {
+    bottom: auto;
+    top: 0;
+    transform: translateY(calc(-100% + 10px));
+  }
+}
+
+.custom-form__select.is-open {
+  .custom-form__list {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .custom-form__icon {
+    transform: rotate(0);
+    transition: transform $trans-default;
+  }
+}
+
+.custom-form__select.not-empty {
+  .custom-form__text {
+    opacity: 1;
+  }
+}
+
+.custom-form__select.slide-up.not-empty,
+.custom-form__select.slide-up.is-open {
+  .custom-form__text {
+    opacity: 1;
+  }
+}
+
+.custom-form__toggle {
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  width: 100%;
+
+  label {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+
+  input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+  }
+
+  div {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: all $trans-default;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  svg {
+    position: absolute;
+    display: none;
+    left: 5px;
+    width: 10px;
+    height: 8px;
+  }
+
+  span {
+    margin-top: 4px;
+    cursor: pointer;
+  }
+}
+
+.custom-form__toggle--modal {
+  margin: 2px -1px 14px;
+
+  @include vp-767 {
+    margin: 4px 0 0;
+  }
+
+  .custom-form__toggle--primary {
+    @include vp-767 {
+      margin-left: 11px;
+    }
+  }
+}
+
+.custom-form__toggle.is-invalid {
+  div {
+    border: 1px solid $color-wild-watermelon;
+    background-color: $color-wild-watermelon-20;
+  }
+}
+
+.custom-form__toggle.is-disabled {
+  pointer-events: none;
+
+  div,
+  span {
+    cursor: default;
+  }
+
+  input:checked + div {
+    border: none;
+    background-color: $color-mischka;
+  }
+
+  input:checked + svg {
+    color: $color-white-70;
+  }
+}
+
+.custom-form__toggle--primary.is-disabled {
+  input + div {
+    border: 1px solid $color-default-white;
+    background-color: $color-white-60;
+  }
+}
+
+.custom-form__toggle--modal.is-disabled {
+  input + div {
+    border: 1px solid $color-cerulean-blue;
+    background-color: $color-cerulean-blue-60;
+  }
+}
+
+.custom-form__toggle--primary {
+  margin-top: 4px;
+  margin-left: -1px;
+  margin-bottom: 23px;
+
+  div {
+    border: 1px solid $color-white-70;
+    background-color: $color-cerulean-blue;
+  }
+
+  span {
+    color: $color-white-90;
+
+    @include vp-767 {
+      margin-top: -3px;
+      line-height: 14px;
+    }
+  }
+
+  input:checked + div {
+    background: $color-default-white;
+    border: none;
+  }
+
+  input:checked ~ svg {
+    top: 6px;
+    display: block;
+    color: $color-cerulean-blue;
+  }
+
+  @include vp-767 {
+    margin-top: 5px;
+    margin-bottom: 9px;
+  }
+}
+
+.custom-form__toggle--primary input {
+  &:hover,
+  &:focus-visible {
+    + div {
+      background-color: $color-cerulean-blue;
+      border: 1px solid $color-default-white;
+    }
+
+    ~ span {
+      color: $color-default-white;
+    }
+  }
+}
+
+.custom-form__toggle--primary input:checked {
+  &:hover,
+  &:focus-visible {
+    ~ svg {
+      color: $color-default-white;
+    }
+  }
+}
+
+.custom-form__toggle--modal {
+  div {
+    margin-top: 3px;
+    border: 1px solid $color-cerulean-blue-70;
+    background-color: $color-default-white;
+  }
+
+  span {
+    align-self: center;
+    color: $color-charcoal-90;
+
+    @include vp-767 {
+      margin-top: 0;
+      line-height: 14px;
+    }
+  }
+
+  input:checked + div {
+    background: $color-cerulean-blue;
+    border: none;
+
+    @include vp-767 {
+      margin-bottom: 4px;
+    }
+  }
+
+  input:checked ~ svg {
+    top: 9px;
+    display: block;
+    color: $color-default-white;
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+  }
+}
+
+.custom-form__toggle--modal input {
+  &:hover,
+  &:focus-visible {
+    + div {
+      background-color: $color-default-white;
+      border: 1px solid $color-cerulean-blue;
+    }
+
+    ~ span {
+      color: $color-charcoal;
+    }
+  }
+}
+
+.custom-form__toggle--modal input:checked {
+  &:hover,
+  &:focus-visible {
+    ~ svg {
+      color: $color-cerulean-blue;
+    }
+  }
+}
