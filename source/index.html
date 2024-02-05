@@ -285,8 +285,176 @@
           </section>
 
           <section class="programs" id="programs" data-test="programs">
-            <div class="container">
-              <h2>Программы</h2>
+            <div class="container programs__container">
+              <h2 class="programs__title">Программы</h2>
+              <a class="btn btn--text btn--light programs__btn" href="#">
+                <span>Все программы</span>
+                <div class="btn__icon">
+                  <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                    <use href="/__spritemap#sprite-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+
+              <div class="programs__swiper swiper" data-swiper="programs">
+                <ul class="programs__swiper-wrapper swiper-wrapper">
+                  <li class="programs__swiper-slide swiper-slide">
+                    <div class="programs__swiper-content">
+                      <h3>Стажировки</h3>
+                      <div class="programs__content-wrapper">
+                        <p>Получите незаменимый опыт работы в&nbsp;крупнейших мировых компаниях.</p>
+                        <a class="btn btn--arrow" href="#">
+                          <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                            <use href="/__spritemap#sprite-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-1-mobile@1x.webp 1x, ./img/programs/programs-1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-1-tablet@1x.webp 1x, ./img/programs/programs-1-tablet@2x.webp 2x">
+                      <source type="image/webp" width="392" height="420" srcset="img/programs/programs-1-desktop@1x.webp 1x, img/programs/programs-1-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-1-mobile@1x.jpg 1x, ./img/programs/programs-1-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-1-tablet@1x.jpg 1x, ./img/programs/programs-1-tablet@2x.jpg 2x">
+                      <img src="img/programs/programs-1-desktop@1x.jpg" width="392" height="420" srcset="img/programs/programs-1-desktop@2x.jpg 2x" alt="Пара женщин просматривает бумаги.">
+                    </picture>
+                  </li>
+
+                  <li class="programs__swiper-slide swiper-slide">
+                    <div class="programs__swiper-content">
+                      <h3>Волонтёрство</h3>
+                      <div class="programs__content-wrapper">
+                        <p>Помогайте другим и&nbsp;развивайте свои лидерские качества.</p>
+                        <a class="btn btn--arrow" href="#">
+                          <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                            <use href="/__spritemap#sprite-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-2-mobile@1x.webp 1x, ./img/programs/programs-2-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-2-tablet@1x.webp 1x, ./img/programs/programs-2-tablet@2x.webp 2x">
+                      <source type="image/webp" width="392" height="420" srcset="img/programs/programs-2-desktop@1x.webp 1x, img/programs/programs-2-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-2-mobile@1x.jpg 1x, ./img/programs/programs-2-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-2-tablet@1x.jpg 1x, ./img/programs/programs-2-tablet@2x.jpg 2x">
+                      <img src="img/programs/programs-2-desktop@1x.jpg" width="392" height="420" srcset="img/programs/programs-2-desktop@2x.jpg 2x" alt="Мужчина, держащий в руках маленькое растение.">
+                    </picture>
+                  </li>
+
+                  <li class="programs__swiper-slide swiper-slide">
+                    <div class="programs__swiper-content">
+                      <h3>Учёба</h3>
+                      <div class="programs__content-wrapper">
+                        <p>Получите образование и&nbsp;измените своё будущее.</p>
+                        <a class="btn btn--arrow" href="#">
+                          <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                            <use href="/__spritemap#sprite-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-3-mobile@1x.webp 1x, ./img/programs/programs-3-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-3-tablet@1x.webp 1x, ./img/programs/programs-3-tablet@2x.webp 2x">
+                      <source type="image/webp" width="392" height="420" srcset="img/programs/programs-3-desktop@1x.webp 1x, img/programs/programs-3-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-3-mobile@1x.jpg 1x, ./img/programs/programs-3-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-3-tablet@1x.jpg 1x, ./img/programs/programs-3-tablet@2x.jpg 2x">
+                      <img src="img/programs/programs-3-desktop@1x.jpg" width="392" height="420" srcset="img/programs/programs-3-desktop@2x.jpg 2x" alt="Мужчина, сидящий за столом с книгами и ручкой.">
+                    </picture>
+                  </li>
+
+                  <li class="programs__swiper-slide swiper-slide">
+                    <div class="programs__swiper-content">
+                      <h3>Стажировки</h3>
+                      <div class="programs__content-wrapper">
+                        <p>Получите незаменимый опыт работы в&nbsp;крупнейших мировых компаниях.</p>
+                        <a class="btn btn--arrow" href="#">
+                          <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                            <use href="/__spritemap#sprite-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-1-mobile@1x.webp 1x, ./img/programs/programs-1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-1-tablet@1x.webp 1x, ./img/programs/programs-1-tablet@2x.webp 2x">
+                      <source type="image/webp" width="392" height="420" srcset="img/programs/programs-1-desktop@1x.webp 1x, img/programs/programs-1-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-1-mobile@1x.jpg 1x, ./img/programs/programs-1-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-1-tablet@1x.jpg 1x, ./img/programs/programs-1-tablet@2x.jpg 2x">
+                      <img src="img/programs/programs-1-desktop@1x.jpg" width="392" height="420" srcset="img/programs/programs-1-desktop@2x.jpg 2x" alt="Пара женщин просматривает бумаги.">
+                    </picture>
+                  </li>
+
+                  <li class="programs__swiper-slide swiper-slide">
+                    <div class="programs__swiper-content">
+                      <h3>Волонтёрство</h3>
+                      <div class="programs__content-wrapper">
+                        <p>Помогайте другим и&nbsp;развивайте свои лидерские качества.</p>
+                        <a class="btn btn--arrow" href="#">
+                          <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                            <use href="/__spritemap#sprite-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-2-mobile@1x.webp 1x, ./img/programs/programs-2-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-2-tablet@1x.webp 1x, ./img/programs/programs-2-tablet@2x.webp 2x">
+                      <source type="image/webp" width="392" height="420" srcset="img/programs/programs-2-desktop@1x.webp 1x, img/programs/programs-2-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-2-mobile@1x.jpg 1x, ./img/programs/programs-2-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-2-tablet@1x.jpg 1x, ./img/programs/programs-2-tablet@2x.jpg 2x">
+                      <img src="img/programs/programs-2-desktop@1x.jpg" width="392" height="420" srcset="img/programs/programs-2-desktop@2x.jpg 2x" alt="Мужчина, держащий в руках маленькое растение.">
+                    </picture>
+                  </li>
+
+                  <li class="programs__swiper-slide swiper-slide">
+                    <div class="programs__swiper-content">
+                      <h3>Учёба</h3>
+                      <div class="programs__content-wrapper">
+                        <p>Получите образование и&nbsp;измените своё будущее.</p>
+                        <a class="btn btn--arrow" href="#">
+                          <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                            <use href="/__spritemap#sprite-arrow"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-3-mobile@1x.webp 1x, ./img/programs/programs-3-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-3-tablet@1x.webp 1x, ./img/programs/programs-3-tablet@2x.webp 2x">
+                      <source type="image/webp" width="392" height="420" srcset="img/programs/programs-3-desktop@1x.webp 1x, img/programs/programs-3-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="290" height="400" srcset="./img/programs/programs-3-mobile@1x.jpg 1x, ./img/programs/programs-3-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="324" height="420" srcset="./img/programs/programs-3-tablet@1x.jpg 1x, ./img/programs/programs-3-tablet@2x.jpg 2x">
+                      <img src="img/programs/programs-3-desktop@1x.jpg" width="392" height="420" srcset="img/programs/programs-3-desktop@2x.jpg 2x" alt="Мужчина, сидящий за столом с книгами и ручкой.">
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="programs__scrollbar" data-scrollbar="programs"></div>
+
+              <div class="programs__button-container">
+                <button class="btn btn--swiper btn--prev" type="button" data-button="prev-programs">
+                  <span class="visually-hidden">Предыдущий слайд.</span>
+                  <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                    <use href="/__spritemap#sprite-arrow"></use>
+                  </svg>
+                </button>
+
+                <button class="btn btn--swiper btn--next" type="button" data-button="next-programs">
+                  <span class="visually-hidden">Следующий слайд.</span>
+                  <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
+                    <use href="/__spritemap#sprite-arrow"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </section>
 
@@ -473,23 +641,23 @@
                     </div>
                   </div>
 
-                  <div class="custom-form__select custom-form__select--primary" data-select="data-select" data-validate-type="select" data-required="true" data-name="city" data-id="city">
-                    <div class="custom-form__label">Выберите город</div>
-                    <button class="custom-form__btn custom-form__btn--primary" type="button" aria-label="Выберите город.">
-                      <span class="custom-form__text"></span>
-                      <div class="custom-form__icon">
+                  <div class="custom-select custom-select--primary" data-select="data-select" data-validate-type="select" data-required="true" data-name="city" data-id="city">
+                    <div class="custom-select__label">Выберите город</div>
+                    <button class="custom-select__button custom-select__button--primary" type="button" aria-label="Выберите город.">
+                      <span class="custom-select__text"></span>
+                      <div class="custom-select__icon">
                         <svg width="16" height="16" role="img" aria-hidden="true" focusable="false">
                           <use href="/__spritemap#sprite-checkmark"></use>
                         </svg>
                       </div>
                     </button>
 
-                    <ul class="custom-form__list custom-form__list--primary" role="listbox">
-                      <li class="custom-form__item" tabindex="0" data-select-value="choose" aria-selected="false" role="option"></li>
-                      <li class="custom-form__item" tabindex="0" data-select-value="saint-petersburg" aria-selected="false" role="option">Санкт-Петербург</li>
-                      <li class="custom-form__item" tabindex="0" data-select-value="moscow" aria-selected="false" role="option">Москва</li>
-                      <li class="custom-form__item" tabindex="0" data-select-value="dolgoprudny" aria-selected="false" role="option">Долгопрудный</li>
-                      <li class="custom-form__item" tabindex="0" data-select-value="almaty" aria-selected="false" role="option">Алматы</li>
+                    <ul class="custom-select__list custom-select__list--primary" role="listbox">
+                      <li class="custom-select__item" tabindex="0" data-select-value="choose" aria-selected="false" role="option"></li>
+                      <li class="custom-select__item" tabindex="0" data-select-value="saint-petersburg" aria-selected="false" role="option">Санкт-Петербург</li>
+                      <li class="custom-select__item" tabindex="0" data-select-value="moscow" aria-selected="false" role="option">Москва</li>
+                      <li class="custom-select__item" tabindex="0" data-select-value="dolgoprudny" aria-selected="false" role="option">Долгопрудный</li>
+                      <li class="custom-select__item" tabindex="0" data-select-value="almaty" aria-selected="false" role="option">Алматы</li>
                     </ul>
                   </div>
 
@@ -625,23 +793,23 @@
               </label>
             </div>
 
-            <div class="custom-form__select custom-form__select--modal" data-select="data-select" data-validate-type="select" data-required="true" data-name="city" data-id="city">
-              <div class="custom-form__label">Выберите город</div>
-              <button class="custom-form__btn custom-form__btn--modal" type="button" aria-label="Выберите город.">
-                <span class="custom-form__text"></span>
-                <div class="custom-form__icon">
+            <div class="custom-select custom-select--modal" data-select="data-select" data-validate-type="select" data-required="true" data-name="city" data-id="city">
+              <div class="custom-select__label">Выберите город</div>
+              <button class="custom-select__button custom-select__button--modal" type="button" aria-label="Выберите город.">
+                <span class="custom-select__text"></span>
+                <div class="custom-select__icon">
                   <svg width="16" height="16" role="img" aria-hidden="true" focusable="false">
                     <use href="/__spritemap#sprite-checkmark"></use>
                   </svg>
                 </div>
               </button>
 
-              <ul class="custom-form__list custom-form__list--modal" role="listbox">
-                <li class="custom-form__item custom-select__item" tabindex="0" data-select-value="choose" aria-selected="false" role="option"></li>
-                <li class="custom-form__item custom-select__item" tabindex="0" data-select-value="saint-petersburg" aria-selected="false" role="option">Санкт-Петербург</li>
-                <li class="custom-form__item custom-select__item" tabindex="0" data-select-value="moscow" aria-selected="false" role="option">Москва</li>
-                <li class="custom-form__item custom-select__item" tabindex="0" data-select-value="dolgoprudny" aria-selected="false" role="option">Долгопрудный</li>
-                <li class="custom-form__item custom-select__item" tabindex="0" data-select-value="almaty" aria-selected="false" role="option">Алматы</li>
+              <ul class="custom-select__list custom-select__list--modal" role="listbox">
+                <li class="custom-select__item" tabindex="0" data-select-value="choose" aria-selected="false" role="option"></li>
+                <li class="custom-select__item" tabindex="0" data-select-value="saint-petersburg" aria-selected="false" role="option">Санкт-Петербург</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="moscow" aria-selected="false" role="option">Москва</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="dolgoprudny" aria-selected="false" role="option">Долгопрудный</li>
+                <li class="custom-select__item" tabindex="0" data-select-value="almaty" aria-selected="false" role="option">Алматы</li>
               </ul>
             </div>
 

@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {StickyHeader} from './vendor/sticky-header';
 import {initMenu} from './modules/menu';
 import {initAccordions} from './modules/init-accordion';
-import {initSliders} from './modules/slider';
+import {initSliders} from './modules/slider/init-slider';
 import {CustomSelect} from './vendor/select/custom-select';
 import {initAutoResizeTextarea} from './vendor/auto-resize-textarea';
 import {initModals} from './modules/init-modals';
