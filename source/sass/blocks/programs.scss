@@ -88,6 +88,7 @@
 }
 
 .programs__swiper-content h3 {
+  position: relative;
   width: 194px;
   margin: 0;
   padding: 18px 6px 6px 18px;
@@ -117,6 +118,7 @@
     right: -18px;
     width: 18px;
     height: 18px;
+    background-color: $color-default-white;
   }
 }
 

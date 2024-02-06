@@ -4,7 +4,7 @@ import {Scrollbar, Navigation} from 'swiper/modules';
 const slider = document.querySelector('[data-swiper="programs"]');
 const buttonNext = document.querySelector('[data-button="next-programs"]');
 const buttonPrev = document.querySelector('[data-button="prev-programs"]');
-const scrollbar = document.querySelector('[data-scrollbar="programs"]');
+const scrollbar = slider.querySelector('[data-scrollbar="programs"]');
 
 const setSlider = () => new Swiper(slider, {
   modules: [Scrollbar, Navigation],

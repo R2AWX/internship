@@ -2,12 +2,12 @@ import Swiper from 'swiper';
 import {Autoplay, Pagination} from 'swiper/modules';
 
 const slider = document.querySelector('[data-swiper="slider"]');
-const sliderPagination = slider.querySelector('[data-button="pagination-slider"]');
+const pagination = slider.querySelector('[data-button="pagination-slider"]');
 
 const setSlider = () => new Swiper(slider, {
   modules: [Autoplay, Pagination],
   pagination: {
-    el: sliderPagination,
+    el: pagination,
     clickable: true,
     type: 'bullets',
     bulletElement: 'div',
