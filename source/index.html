@@ -28,16 +28,16 @@
 
             <button class="btn btn--menu btn--light header__btn" type="button" data-menu="button">
               <span>Меню</span>
-              <div class="btn__icon--open">
+              <span class="btn__icon btn__icon--open">
                 <svg width="20" height="20" role="img" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-open"></use>
                 </svg>
-              </div>
-              <div class="btn__icon--close">
+              </span>
+              <span class="btn__icon btn__icon--close">
                 <svg width="20" height="20" role="img" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-close"></use>
                 </svg>
-              </div>
+              </span>
             </button>
 
             <div class="header__wrapper" data-menu="nav">
@@ -47,12 +47,12 @@
                 </li>
 
                 <li class="header__item" data-accordion="element">
-                  <a class="header__link" data-accordion="button">
+                  <button class="header__link btn" type="button" data-accordion="button">
                     <span>Программы</span>
                     <svg width="12" height="12" role="img" aria-hidden="true" focusable="false">
                       <use href="/__spritemap#sprite-checkmark"></use>
                     </svg>
-                  </a>
+                  </button>
 
                   <ul class="header__list header__list--secondary" data-accordion="content">
                     <li class="header__item">
@@ -79,12 +79,12 @@
                 </li>
 
                 <li class="header__item" data-accordion="element">
-                  <a class="header__link" data-accordion="button">
+                  <button class="header__link btn" type="button" data-accordion="button">
                     <span>Новости</span>
                     <svg width="12" height="12" role="img" aria-hidden="true" focusable="false">
                       <use href="/__spritemap#sprite-checkmark"></use>
                     </svg>
-                  </a>
+                  </button>
 
                   <ul class="header__list header__list--secondary" data-accordion="content">
                     <li class="header__item">
@@ -129,11 +129,11 @@
                       <div class="slider__btn-wrapper">
                         <a class="btn btn--text btn--light" href="#">
                           <span>Подробнее</span>
-                          <div class="btn__icon">
+                          <span class="btn__icon">
                             <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                               <use href="/__spritemap#sprite-arrow"></use>
                             </svg>
-                          </div>
+                          </span>
                         </a>
                       </div>
                     </div>
@@ -159,11 +159,11 @@
                       <div class="slider__btn-wrapper">
                         <a class="btn btn--text btn--light" href="#">
                           <span>Подробнее</span>
-                          <div class="btn__icon">
+                          <span class="btn__icon">
                             <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                               <use href="/__spritemap#sprite-arrow"></use>
                             </svg>
-                          </div>
+                          </span>
                         </a>
                       </div>
                     </div>
@@ -189,11 +189,11 @@
                       <div class="slider__btn-wrapper">
                         <a class="btn btn--text btn--light" href="#">
                           <span>Подробнее</span>
-                          <div class="btn__icon">
+                          <span class="btn__icon">
                             <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                               <use href="/__spritemap#sprite-arrow"></use>
                             </svg>
-                          </div>
+                          </span>
                         </a>
                       </div>
                     </div>
@@ -231,11 +231,11 @@
                   <p>Наша деятельность направлена на&nbsp;повышение квалификации молодых специалистов на&nbsp;ранних и&nbsp;средних стадиях карьеры, предоставляя им&nbsp;инструменты для решения сложных проблем, с&nbsp;которыми сталкиваются в&nbsp;мире. Цель центра&nbsp;— наделить этих людей способностью инициировать значимые изменения.</p>
                   <a class="btn btn--text btn--light" href="#" data-open-modal="about">
                     <span>Подробнее о проекте</span>
-                    <div class="btn__icon">
+                    <span class="btn__icon">
                       <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                         <use href="/__spritemap#sprite-arrow"></use>
                       </svg>
-                    </div>
+                    </span>
                   </a>
                 </div>
               </div>
@@ -289,11 +289,11 @@
               <h2 class="programs__title">Программы</h2>
               <a class="btn btn--text btn--light programs__btn" href="#">
                 <span>Все программы</span>
-                <div class="btn__icon">
+                <span class="btn__icon">
                   <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                     <use href="/__spritemap#sprite-arrow"></use>
                   </svg>
-                </div>
+                </span>
               </a>
 
               <div class="programs__swiper swiper" data-swiper="programs">
@@ -304,6 +304,7 @@
                       <div class="programs__content-wrapper">
                         <p>Получите незаменимый опыт работы в&nbsp;крупнейших мировых компаниях.</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -327,6 +328,7 @@
                       <div class="programs__content-wrapper">
                         <p>Помогайте другим и&nbsp;развивайте свои лидерские качества.</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -350,6 +352,7 @@
                       <div class="programs__content-wrapper">
                         <p>Получите образование и&nbsp;измените своё будущее.</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -373,6 +376,7 @@
                       <div class="programs__content-wrapper">
                         <p>Получите незаменимый опыт работы в&nbsp;крупнейших мировых компаниях.</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -396,6 +400,7 @@
                       <div class="programs__content-wrapper">
                         <p>Помогайте другим и&nbsp;развивайте свои лидерские качества.</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -419,6 +424,7 @@
                       <div class="programs__content-wrapper">
                         <p>Получите образование и&nbsp;измените своё будущее.</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -518,6 +524,7 @@
                       <div class="news__content-wrapper">
                         <p>Саша рассказывает, как попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в&nbsp;ISOFound</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -540,6 +547,7 @@
                       <div class="news__content-wrapper">
                         <p>Какие места посещают наши студенты весной</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -562,6 +570,7 @@
                       <div class="news__content-wrapper">
                         <p>Программа помощи детям длительностью 4&nbsp;месяца</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -584,6 +593,7 @@
                       <div class="news__content-wrapper">
                         <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -606,6 +616,7 @@
                       <div class="news__content-wrapper">
                         <p>Саша рассказывает, как попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в&nbsp;ISOFound</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -628,6 +639,7 @@
                       <div class="news__content-wrapper">
                         <p>Какие места посещают наши студенты весной</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -650,6 +662,7 @@
                       <div class="news__content-wrapper">
                         <p>Программа помощи детям длительностью 4&nbsp;месяца</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -672,6 +685,7 @@
                       <div class="news__content-wrapper">
                         <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -694,6 +708,7 @@
                       <div class="news__content-wrapper">
                         <p>Саша рассказывает, как попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в&nbsp;ISOFound</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -716,6 +731,7 @@
                       <div class="news__content-wrapper">
                         <p>Какие места посещают наши студенты весной</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -738,6 +754,7 @@
                       <div class="news__content-wrapper">
                         <p>Программа помощи детям длительностью 4&nbsp;месяца</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -760,6 +777,7 @@
                       <div class="news__content-wrapper">
                         <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
                         <a class="btn btn--arrow" href="#">
+                          <span class="visually-hidden">Подробнее</span>
                           <svg width="10" height="10" aria-hidden="true" focusable="false" role="img">
                             <use href="/__spritemap#sprite-arrow"></use>
                           </svg>
@@ -1077,11 +1095,11 @@
                     <div class="custom-select__label">Выберите город</div>
                     <button class="custom-select__button custom-select__button--primary" type="button" aria-label="Выберите город.">
                       <span class="custom-select__text"></span>
-                      <div class="custom-select__icon">
+                      <span class="custom-select__icon">
                         <svg width="16" height="16" role="img" aria-hidden="true" focusable="false">
                           <use href="/__spritemap#sprite-checkmark"></use>
                         </svg>
-                      </div>
+                      </span>
                     </button>
 
                     <ul class="custom-select__list custom-select__list--primary" role="listbox">
@@ -1096,21 +1114,21 @@
                   <div class="custom-form__toggle custom-form__toggle--primary" data-validate-type="checkbox" data-required="data-required">
                     <label>
                       <input type="checkbox" value="agree" name="user-agreement" aria-label="Согласие на обработку персональных данных." checked>
-                      <div></div>
+                      <span></span>
                       <svg width="10" height="8" role="img" aria-hidden="true" focusable="false">
                         <use href="/__spritemap#sprite-check"></use>
                       </svg>
-                      <span>Я согласен на обработку моих персональных данных</span>
+                      <b>Я согласен на обработку моих персональных данных</b>
                     </label>
                   </div>
 
                   <button class="btn btn--text btn--dark form__submit" type="submit">
                     <span>Отправить</span>
-                    <div class="btn__icon">
+                    <span class="btn__icon">
                       <svg width="10" height="10" role="img" aria-hidden="true" focusable="false">
                         <use href="/__spritemap#sprite-arrow"></use>
                       </svg>
-                    </div>
+                    </span>
                   </button>
                   <input type="hidden" name="form" value="Данные были отправлены из главной формы (на странице)">
                 </form>
@@ -1229,11 +1247,11 @@
               <div class="custom-select__label">Выберите город</div>
               <button class="custom-select__button custom-select__button--modal" type="button" aria-label="Выберите город.">
                 <span class="custom-select__text"></span>
-                <div class="custom-select__icon">
+                <span class="custom-select__icon">
                   <svg width="16" height="16" role="img" aria-hidden="true" focusable="false">
                     <use href="/__spritemap#sprite-checkmark"></use>
                   </svg>
-                </div>
+                </span>
               </button>
 
               <ul class="custom-select__list custom-select__list--modal" role="listbox">
@@ -1248,21 +1266,21 @@
             <div class="custom-form__toggle custom-form__toggle--modal" data-validate-type="checkbox" data-required="data-required">
               <label>
                 <input type="checkbox" value="agree" name="user-agreement" aria-label="Согласие на обработку персональных данных." checked>
-                <div></div>
+                <span></span>
                 <svg width="10" height="8" role="img" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-check"></use>
                 </svg>
-                <span>Я согласен на обработку моих персональных данных</span>
+                <b>Я согласен на обработку моих персональных данных</b>
               </label>
             </div>
 
             <button class="btn btn--text btn--light modal__submit" type="submit">
               <span>Отправить</span>
-              <div class="btn__icon">
+              <span class="btn__icon">
                 <svg width="10" height="10" role="img" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-arrow"></use>
                 </svg>
-              </div>
+              </span>
             </button>
             <input type="hidden" name="form" value="Данные были отправлены из формы в модальном окне">
           </form>

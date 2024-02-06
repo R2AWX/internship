@@ -133,6 +133,7 @@
   }
 
   @include vp-767 {
+    max-width: 290px;
     padding: 35px 15px 40px;
   }
 }
@@ -344,7 +345,7 @@
     clip: rect(0 0 0 0);
   }
 
-  div {
+  span {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
@@ -361,28 +362,15 @@
     height: 8px;
   }
 
-  span {
-    margin-top: 4px;
+  b {
+    font-weight: 400;
+    margin: 4px 0 0;
     cursor: pointer;
   }
 }
 
-.custom-form__toggle--modal {
-  margin: 2px -1px 14px;
-
-  @include vp-767 {
-    margin: 4px 0 0;
-  }
-
-  .custom-form__toggle--primary {
-    @include vp-767 {
-      margin-left: 11px;
-    }
-  }
-}
-
 .custom-form__toggle.is-invalid {
-  div {
+  span {
     border: 1px solid $color-wild-watermelon;
     background-color: $color-wild-watermelon-20;
   }
@@ -391,12 +379,12 @@
 .custom-form__toggle.is-disabled {
   pointer-events: none;
 
-  div,
-  span {
+  span,
+  b {
     cursor: default;
   }
 
-  input:checked + div {
+  input:checked + span {
     border: none;
     background-color: $color-mischka;
   }
@@ -407,30 +395,28 @@
 }
 
 .custom-form__toggle--primary.is-disabled {
-  input + div {
+  input + span {
     border: 1px solid $color-default-white;
     background-color: $color-white-60;
   }
 }
 
 .custom-form__toggle--modal.is-disabled {
-  input + div {
+  input + span {
     border: 1px solid $color-cerulean-blue;
     background-color: $color-cerulean-blue-60;
   }
 }
 
 .custom-form__toggle--primary {
-  margin-top: 4px;
-  margin-left: -1px;
-  margin-bottom: 23px;
+  margin: 4px 0 23px -1px;
 
-  div {
+  span {
     border: 1px solid $color-white-70;
     background-color: $color-cerulean-blue;
   }
 
-  span {
+  b {
     color: $color-white-90;
 
     @include vp-767 {
@@ -439,7 +425,7 @@
     }
   }
 
-  input:checked + div {
+  input:checked + span {
     background: $color-default-white;
     border: none;
   }
@@ -451,28 +437,25 @@
   }
 
   @include vp-767 {
-    margin-top: 5px;
-    margin-bottom: 9px;
+    margin: 5px 0 9px 11px;
   }
 }
 
 .custom-form__toggle--primary input {
-  &:hover,
-  &:focus-visible {
-    + div {
+  @include hover-focus {
+    + span {
       background-color: $color-cerulean-blue;
       border: 1px solid $color-default-white;
     }
 
-    ~ span {
+    ~ b {
       color: $color-default-white;
     }
   }
 }
 
 .custom-form__toggle--primary input:checked {
-  &:hover,
-  &:focus-visible {
+  @include hover-focus {
     ~ svg {
       color: $color-default-white;
     }
@@ -480,13 +463,15 @@
 }
 
 .custom-form__toggle--modal {
-  div {
+  margin: 2px -1px 14px;
+
+  span {
     margin-top: 3px;
     border: 1px solid $color-cerulean-blue-70;
     background-color: $color-default-white;
   }
 
-  span {
+  b {
     align-self: center;
     color: $color-charcoal-90;
 
@@ -496,12 +481,12 @@
     }
   }
 
-  input:checked + div {
+  input:checked + span {
     background: $color-cerulean-blue;
     border: none;
 
     @include vp-767 {
-      margin-bottom: 4px;
+      margin: 4px 0;
     }
   }
 
@@ -517,22 +502,20 @@
 }
 
 .custom-form__toggle--modal input {
-  &:hover,
-  &:focus-visible {
-    + div {
+  @include hover-focus {
+    + span {
       background-color: $color-default-white;
       border: 1px solid $color-cerulean-blue;
     }
 
-    ~ span {
+    ~ b {
       color: $color-charcoal;
     }
   }
 }
 
 .custom-form__toggle--modal input:checked {
-  &:hover,
-  &:focus-visible {
+  @include hover-focus {
     ~ svg {
       color: $color-cerulean-blue;
     }

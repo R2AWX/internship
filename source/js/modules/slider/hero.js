@@ -14,9 +14,9 @@ const setSlider = () => new Swiper(slider, {
     bulletClass: 'slider__pagination-bullet',
     bulletActiveClass: 'is-active',
   },
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
   loop: true,
   breakpoints: {
     1440: {

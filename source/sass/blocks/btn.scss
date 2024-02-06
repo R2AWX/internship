@@ -15,7 +15,7 @@
 .btn--menu {
   background-color: $color-default-white;
 
-  div {
+  .btn__icon {
     height: 46px;
   }
 }
@@ -24,7 +24,7 @@
   border: 1px solid $color-cerulean-blue;
   color: $color-cerulean-blue;
 
-  div {
+  .btn__icon {
     color: $color-default-white;
     background-color: $color-cerulean-blue;
   }
@@ -33,7 +33,7 @@
     color: $color-default-white;
     background-color: $color-cerulean-blue;
 
-    div {
+    .btn__icon {
       color: $color-cerulean-blue;
       background-color: $color-default-white;
     }
@@ -49,7 +49,7 @@
   color: $color-default-white;
   background-color: $color-cerulean-blue;
 
-  div {
+  .btn__icon {
     color: $color-cerulean-blue;
     background-color: $color-default-white;
   }
@@ -58,7 +58,7 @@
     color: $color-cerulean-blue;
     background-color: $color-default-white;
 
-    div {
+    .btn__icon {
       color: $color-default-white;
       background-color: $color-cerulean-blue;
     }
@@ -79,7 +79,7 @@
   padding: 3px 3px 3px 29px;
   gap: 30px;
 
-  div {
+  .btn__icon {
     height: 46px;
     border-radius: 50%;
     padding: 18px;
@@ -102,7 +102,7 @@
     color: $color-mischka;
     border-color: $color-mischka;
 
-    div {
+    .btn__icon {
       color: $color-default-white;
       background-color: $color-mischka;
     }
@@ -114,7 +114,7 @@
     padding-left: 19px;
     gap: 20px;
 
-    div {
+    .btn__icon {
       height: 34px;
       padding: 12px;
     }
