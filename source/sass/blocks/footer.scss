@@ -1,16 +1,16 @@
 .footer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   gap: 25px;
 
   @include vp-1439 {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   @include vp-767 {
-    margin-bottom: 60px;
-    padding-bottom: 41px;
+    max-width: 290px;
+    padding: 0 0 101px;
     gap: 20px;
   }
 }
@@ -135,12 +135,13 @@
 
   @include vp-1439 {
     top: auto;
-    bottom: 0;
+    bottom: 50px;
     right: 45px;
     gap: 10px;
   }
 
   @include vp-767 {
+    bottom: 60px;
     right: 50%;
     transform: translateX(50%);
   }

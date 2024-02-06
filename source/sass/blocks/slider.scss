@@ -100,7 +100,8 @@
   }
 
   @include vp-767 {
-    width: 261px;
+    margin-top: -5px;
+    width: 267px;
     font-size: 14px;
     background-color: $color-default-white;
     padding: 0 14px 15px;
