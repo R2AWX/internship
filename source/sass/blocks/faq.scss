@@ -7,12 +7,12 @@
   text-align: center;
 
   @include vp-1439 {
-    margin: 13px 0 53px;
+    margin: 0 0 40px;
     font-size: 34px;
   }
 
   @include vp-767 {
-    margin: 5px 0 36px;
+    margin: 2px 0 33px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -34,11 +34,11 @@
   border-radius: 16px;
 
   @include vp-1439 {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 
   @include vp-767 {
-    padding-bottom: 0;
+    padding-bottom: 4px;
   }
 
   @include hover-focus {
@@ -69,15 +69,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 39px 39px 13px;
+  min-height: 54px;
+  box-sizing: content-box;
+  padding: 32px 39px 6px;
   border-radius: 16px;
 
   @include vp-1439 {
-    padding: 30px 30px 20px;
+    min-height: 50px;
+    padding: 24px 29px 9px;
   }
 
   @include vp-767 {
-    padding: 20px 15px;
+    min-height: 40px;
+    padding: 19px 14px 15px;
   }
 }
 
@@ -195,13 +199,13 @@
   color: $color-alabaster;
 
   @include vp-1439 {
-    padding: 0 30px 20px;
+    padding: 0 29px 12px;
     width: 640px;
     line-height: 20px;
   }
 
   @include vp-767 {
-    padding: 0 15px 20px;
+    padding: 0 14px 10px;
     width: 290px;
     font-size: 14px;
   }
